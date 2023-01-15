@@ -1,0 +1,23 @@
+.main {
+  flex: 1 1 auto;
+  padding: 50px 0;
+}
+
+.text__block {
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.text {
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.error {
+  transition: color 0.1s ease;
+  color: red;
+}
+
+/*# sourceMappingURL=Main.module.css.map */

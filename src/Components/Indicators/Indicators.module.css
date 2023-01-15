@@ -1,0 +1,10 @@
+.indicators {
+  display: flex;
+  align-items: center;
+}
+
+.speed {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=Indicators.module.css.map */
