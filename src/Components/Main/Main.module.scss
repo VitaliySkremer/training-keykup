@@ -8,6 +8,8 @@
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .text {
@@ -18,4 +20,8 @@
 .error {
   transition: color .1s ease;
   color: red;
+}
+
+.success {
+  background-color: gray;
 }
