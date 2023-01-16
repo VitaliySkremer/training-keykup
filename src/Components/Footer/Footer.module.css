@@ -1,0 +1,30 @@
+.footer {
+  background-color: var(--footer-bg);
+  padding: 10px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.footer__link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.mail {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */
