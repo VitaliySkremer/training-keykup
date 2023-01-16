@@ -1,0 +1,47 @@
+.keys {
+  width: 100%;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin: 1px;
+}
+
+.sub {
+  vertical-align: super;
+  font-size: smaller;
+  margin-left: 3px;
+}
+
+.key__system {
+  width: fit-content;
+  flex: 1;
+}
+
+.key__space {
+  width: 300px;
+  margin-left: 190px;
+}
+
+.key__graph {
+  width: 100px;
+}
+
+.key__active {
+  background-color: #c7d0d4;
+}
+
+/*# sourceMappingURL=KeyBoard.module.css.map */

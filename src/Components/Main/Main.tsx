@@ -1,6 +1,7 @@
 import styles from './Main.module.scss'
 import {Input} from "../UI/Input/Input";
 import {useEffect, useRef, useState} from "react";
+import {KeyBoard} from "../KeyBoard/KeyBoard";
 export const Main = () => {
   const [text, setText] = useState('')
   const [sucText, setSucText] = useState('')
@@ -50,7 +51,6 @@ export const Main = () => {
     if(key === 'Backspace' || key === 'Delete'){
       const newValue = sucText.slice(-1)
       setText(prevState => newValue + newValue + prevState)
-      console.log(newValue)
     }
   }
 
@@ -76,6 +76,7 @@ export const Main = () => {
           >
           </p>
         </div>
+        <KeyBoard/>
       </div>
     </main>
   )
