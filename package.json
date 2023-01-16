@@ -2,7 +2,7 @@
   "name": "trainingkey",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/training-keykup",
+  "homepage": "https://VitaliySkremer.github.io/training-keykup",
   "type": "module",
   "scripts": {
     "dev": "vite",
