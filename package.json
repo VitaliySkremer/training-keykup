@@ -2,16 +2,18 @@
   "name": "trainingkey",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://VitaliySkremer.github.io/training-keykup",
+  "homepage": "http://VitaliySkremer.github.io/training-keykup/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "mobx": "^6.7.0",
+    "mobx-react-lite": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
