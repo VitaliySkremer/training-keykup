@@ -1,5 +1,5 @@
 .header {
-  height: 70px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   box-shadow: 0 3px 3px var(--header-divider);
@@ -10,4 +10,17 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.btn__settings{
+  border: none;
+  background-color: transparent;
+  color: var(--main-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &_text{
+    margin-right: 5px;
+  }
 }

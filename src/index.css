@@ -18,6 +18,7 @@ html[data-theme=dark] {
   --header-divider: #1e1e1e;
   --main-color:white;
   --footer-bg: #202020;
+  --settings-bg:#202020;
 }
 
 html[data-theme=light] {
@@ -25,6 +26,7 @@ html[data-theme=light] {
   --header-divider: #c2c2c2;
   --main-color:#333;
   --footer-bg: #e2e2e2;
+  --settings-bg:#e2e2e2;
 }
 
 body {
