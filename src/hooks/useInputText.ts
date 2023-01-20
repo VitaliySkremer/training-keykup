@@ -4,6 +4,11 @@ import storySettings, {Languages} from "../Story/storySettings";
 // @ts-ignore
 import translate from 'translate'
 
+enum localLanguage {
+  RU = 'ru',
+  EN = 'en'
+}
+
 export const useInputText = () =>{
   const [text, setText] = useState('')
   const [sucText, setSucText] = useState('')
@@ -11,30 +16,30 @@ export const useInputText = () =>{
   const [dx, setDx] = useState(0);
   const [error, setError] = useState(false)
 
-  const translateText = async () =>{
+  const translateText = async (text: string) =>{
     if(storySettings.language === Languages.RU){
-      translate.from = "en";
-      setText(await translate(text, 'ru'));
+      translate.from = localLanguage.EN;
+      setText(await translate(text, localLanguage.RU));
     }
     else {
-      translate.from = "ru";
-      setText(await translate(text, 'en'));
+      translate.from = localLanguage.RU;
+      setText(await translate(text, localLanguage.EN));
     }
   }
 
   async function getText(){
     const response = await fetch(`https://fish-text.ru/get?number=${storySettings.countParagraph}&format=JSON`)
     const data = await response.text();
-    setText(JSON.parse(data).text);
+    if(JSON.parse(data).text){
+      translateText(JSON.parse(data).text);
+    }
   }
 
   useEffect(()=>{
-    if(text) {
-      translateText();
-      setSucText('');
-      setInputText('');
-      storyKey.stopTimer();
-    }
+    getText()
+    setSucText('');
+    setInputText('');
+    storyKey.stopTimer();
   },[storySettings.language])
 
   useEffect(()=>{
