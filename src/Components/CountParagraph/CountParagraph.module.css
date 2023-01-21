@@ -1,0 +1,44 @@
+.wrapper {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.wrapper__selects {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  height: 2px;
+  width: 10%;
+  background-color: var(--select-count-bg);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
+}
+.item:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: black;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+.item:hover:after {
+  transform: scale(1.5);
+}
+
+.select {
+  background-color: var(--select-coloe);
+}
+.select:after {
+  background-color: var(--select-coloe);
+}
+
+/*# sourceMappingURL=CountParagraph.module.css.map */

@@ -40,7 +40,7 @@ export const useInputText = () =>{
     setSucText('');
     setInputText('');
     storyKey.stopTimer();
-  },[storySettings.language])
+  },[storySettings.language, storySettings.countParagraph])
 
   useEffect(()=>{
     getText();

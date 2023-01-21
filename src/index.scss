@@ -11,6 +11,8 @@ body,html,#root {
 html {
   --switch-color: rgb(107, 107, 107);
   --switch--bg-color: --body-bg;
+  --select-count-bg: #131313;
+  --select-coloe:rgb(98, 238, 137);
 }
 
 html[data-theme='dark']{

@@ -4,8 +4,10 @@ import {Radio} from "../UI/Radio/Radio";
 import {Languages} from "../../Story/storySettings";
 import {useEffect, useState} from "react";
 import storySettings from "../../Story/storySettings";
+import {CountParagraph} from "../CountParagraph/CountParagraph";
+import {observer} from "mobx-react-lite";
 
-export const SettingsMenu = () => {
+export const SettingsMenu = observer(() => {
   const [language, setLanguage] = useState(storySettings.language)
 
   useEffect(()=>{
@@ -31,6 +33,9 @@ export const SettingsMenu = () => {
           onChange={(event)=> setLanguage(Languages.EN)}
         />
       </div>
+      <div>
+        <CountParagraph title='Количество предложений' count={10} select={storySettings.countParagraph}/>
+      </div>
     </div>
   ),node)
-}
+})

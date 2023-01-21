@@ -1,0 +1,43 @@
+.wrapper{
+  text-align: center;
+}
+
+.title{
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.wrapper__selects{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  height: 2px;
+  width: calc((100%/10));
+  background-color: var(--select-count-bg);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
+  &:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform .2s ease;
+  }
+
+  &:hover:after{
+    transform: scale(1.5);
+  }
+}
+
+.select{
+  background-color: var(--select-coloe);
+  &:after{
+    background-color: var(--select-coloe);
+  }
+}
